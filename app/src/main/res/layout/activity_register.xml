@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#5E3835"
+tools:context=".MainActivity">
+
+
+<ImageView
+    android:id="@+id/bgImage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@drawable/e"
+    android:scaleType="centerCrop"/>
+
+    <io.alterac.blurkit.BlurLayout
+        android:id="@+id/blurLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        app:blk_blurRadius="3"
+        app:blk_fps="0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="133dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                style="@android:style/Widget.DeviceDefault.TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Family Bakery"
+                android:textAlignment="center"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome to Family Bakery"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </io.alterac.blurkit.BlurLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="323dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="38dp">
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="301dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/password"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="33dp"
+            android:layout_marginBottom="72dp"
+            android:ems="10"
+            android:hint="Enter Email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="33dp"
+            android:layout_marginEnd="34dp"
+            android:layout_marginBottom="208dp"
+            android:ems="10"
+            android:hint="Enter password"
+            android:inputType="textPassword"
+            android:textColorHint="#171616" />
+
+        <Button
+            android:id="@+id/Register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="117dp"
+            android:layout_marginEnd="118dp"
+            android:layout_marginBottom="139dp"
+            android:background="#171111"
+            android:foregroundTint="#AE9696"
+            android:text="Register"
+            android:textColor="@color/black"
+            android:textColorLink="#FF9800" />
+
+        <TextView
+            android:id="@+id/loginTextView"
+            android:layout_width="341dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Register"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="-95dp"
+            android:layout_marginEnd="15dp"
+            android:text=" Sign In"
+            android:textAlignment="center"
+            android:textColor="#100707"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</RelativeLayout>
